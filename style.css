@@ -1,0 +1,280 @@
+.page {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.page__section {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.page__section_small {
+  max-width: 940px;
+}
+
+.button {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 18px 28px;
+  font-size: 17px;
+  line-height: 20px;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 20px;
+  color: #696969;
+}
+
+.header {
+  min-height: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 25px;
+  line-height: 33px;
+}
+
+.hero {
+  background: linear-gradient(0deg, rgba(253, 110, 110, 0.4), rgba(253, 110, 110, 0.4)),
+    url('./assets/hero-bg.png');
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 45px;
+  padding: 170px 0;
+}
+
+.hero__title {
+  font-size: 47px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 14px;
+}
+
+.skills {
+  color: #696969;
+  background: #ededed;
+}
+
+.skills__content {
+  display: flex;
+  gap: 165px;
+  padding: 80px 0;
+}
+
+.skills__title {
+  font-size: 31px;
+  line-height: 36px;
+  white-space: nowrap;
+}
+
+.skills__progress-bars {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.progress-bar {
+  height: 44px;
+  text-transform: uppercase;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  position: relative;
+}
+
+.progress-bar__fill {
+  background: #d9d9d9;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.progress-bar__text {
+  z-index: 1;
+}
+
+.projects {
+  padding-top: 80px;
+}
+
+.projects__title {
+  color: #4d4d4d;
+  font-size: 31px;
+  line-height: 36px;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.projects__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 2fr 2fr 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'birds   field   field   field  field  bridge'
+    'raybans raybans raybans sand   sand   sand'
+    'people  people  beach   beach  lake   lake'
+    'sky     sky     sky     ocean  ocean  ocean';
+  margin-top: 33px;
+}
+
+.projects__project {
+  position: relative;
+}
+
+.projects__project:nth-child(1) {
+  grid-area: birds;
+}
+
+.projects__project:nth-child(2) {
+  grid-area: field;
+}
+
+.projects__project:nth-child(3) {
+  grid-area: bridge;
+}
+
+.projects__project:nth-child(4) {
+  grid-area: raybans;
+}
+
+.projects__project:nth-child(5) {
+  grid-area: sand;
+}
+
+.projects__project:nth-child(6) {
+  grid-area: people;
+}
+
+.projects__project:nth-child(7) {
+  grid-area: beach;
+}
+
+.projects__project:nth-child(8) {
+  grid-area: lake;
+}
+
+.projects__project:nth-child(9) {
+  grid-area: sky;
+}
+
+.projects__project:nth-child(10) {
+  grid-area: ocean;
+}
+
+.projects__project-figure {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.09);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 20px;
+}
+
+.projects__project-title {
+  color: #fff;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.projects__project-type {
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.49);
+  text-transform: uppercase;
+}
+
+.get-in-touch {
+  color: #696969;
+  background: #ededed;
+  padding: 80px 0;
+}
+
+.get-in-touch__content {
+  display: flex;
+  gap: 90px;
+}
+
+.get-in-touch__text {
+  max-width: 230px;
+}
+
+.get-in-touch__title {
+  font-size: 31px;
+  line-height: 36px;
+}
+
+.get-in-touch__paragraph {
+  margin-top: 38px;
+  color: #a3a3a3;
+}
+
+.get-in-touch__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.get-in-touch__form-input {
+  height: 58px;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.get-in-touch__form-textarea {
+  height: 128px;
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+.get-in-touch__form-input::placeholder,
+.get-in-touch__form-textarea::placeholder {
+  color: #d1d1d1;
+}
+
+.get-in-touch__form-input_dark {
+  background: #f7f7f7;
+}
+
+.get-in-touch__button {
+  font-size: 20px;
+  line-height: 44px;
+  color: #fff;
+  align-self: flex-start;
+  padding: 6px 20px;
+  background: #d1d1d1;
+}
+
+.footer {
+  min-height: 67px;
+  display: flex;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 15px;
+  line-height: 22px;
+  color: #c4c4c4;
+}
